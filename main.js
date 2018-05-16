@@ -117,6 +117,7 @@ $(document).ready(function() {
   $('.close, .overlay').click(function() {
     $('.embed-container').fadeOut(250);
     $('.overlay').fadeOut(250);
+    player.unload();
   });
 
   player.setColor('#e65300').then(function(color) {
@@ -128,5 +129,6 @@ $(document).ready(function() {
   player.on('ended', function() {
     $('.embed-container').fadeOut(250);
     $('.overlay').fadeOut(250);
+    player.unload();
   });
 });

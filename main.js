@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $('.point#one').click(function() {
     $('.overlay h1').html('Video title 1');
-    player.loadVideo(267810466).then(function(id) {
+    player.loadVideo(237401551).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   $('.point#two').click(function() {
     $('.overlay h1').html('Video title 2');
-    player.loadVideo(269387911).then(function(id) {
+    player.loadVideo(246099157).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
 
   $('.point#three').click(function() {
     $('.overlay h1').html('Video title 3');
-    player.loadVideo(213147172).then(function(id) {
+    player.loadVideo(250101793).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
   $('.point#four').click(function() {
     $('.overlay h1').html('Video title 4');
-    player.loadVideo(265915860).then(function(id) {
+    player.loadVideo(250101673).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   $('.point#five').click(function() {
     $('.overlay h1').html('Video title 5');
-    player.loadVideo(264338984).then(function(id) {
+    player.loadVideo(244664985).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -93,7 +93,7 @@ $(document).ready(function() {
 
   $('.point#six').click(function() {
     $('.overlay h1').html('Video title 6');
-    player.loadVideo(269675357).then(function(id) {
+    player.loadVideo(244664877).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {

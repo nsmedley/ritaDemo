@@ -114,7 +114,7 @@ $(document).ready(function() {
     $('.overlay').fadeIn(250);
   });
 
-  $('.close').click(function() {
+  $('.close, .overlay').click(function() {
     $('.embed-container').fadeOut(250);
     $('.overlay').fadeOut(250);
   });

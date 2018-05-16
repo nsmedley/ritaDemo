@@ -1,8 +1,14 @@
 {
-  "name": "Rita Demo",
   "short_name": "Rita Demo",
-  "lang": "en-GB",
-  "start_url": "/",
+  "name": "Rita Demo",
+  "icons": [
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
   "display": "fullscreen",
-  "theme_color": "#e65300"
+  "orientation": "landscape"
 }

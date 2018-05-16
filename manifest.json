@@ -1,0 +1,8 @@
+{
+  "name": "Rita Demo",
+  "short_name": "Rita Demo",
+  "lang": "en-GB",
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#e65300"
+}

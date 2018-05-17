@@ -145,7 +145,7 @@ body {
   .point {
     width:20px;
     height:20px;
-    background:crimson;
+    background:#00a19a;
     border-radius: 50%;
     display: inline-block;
     position: absolute;
@@ -153,10 +153,29 @@ body {
     text-align: center;
     line-height: 20px;
     font-size: 14px;
-    &:hover {
-      transform:scale(1.2);
-      background:darken(crimson, 10%);
-    }
+
+		&:before, &:after {
+		  display: inline-block;
+		  margin: auto;
+		  position: absolute;
+		  content: "";
+		  width: 20px;
+			left:0;
+		  height: 20px;
+		  border-radius: 100px;
+		  background-color: #00a19a;
+		}
+
+		&:after {
+			z-index: -100;
+  		animation: outer-ripple 2000ms linear infinite;
+		}
+
+		&:before {
+			z-index: -200;
+  		animation: inner-ripple 2000ms linear infinite;
+		}
+
     &#one {
       left:100px;
       top:60px;
@@ -181,5 +200,41 @@ body {
       left:650px;
       top:340px;
     }
+  }
+}
+
+@keyframes outer-ripple {
+  0% {
+    transform: scale(1);
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+  }
+  80% {
+    transform: scale(3.5);
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(3.5);
+    filter: alpha(opacity=0);
+    opacity: 0;
+  }
+}
+
+@keyframes inner-ripple {
+  0% {
+    transform: scale(1);
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+  }
+  30% {
+    transform: scale(1);
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2.5);
+    filter: alpha(opacity=0);
+    opacity: 0;
   }
 }

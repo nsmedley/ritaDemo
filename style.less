@@ -150,12 +150,44 @@ body {
     height:20px;
     background:#00a19a;
     border-radius: 50%;
+		cursor: pointer;
+		transition: all 0.25s ease;
     display: inline-block;
     position: absolute;
     color:#fff;
     text-align: center;
     line-height: 20px;
     font-size: 14px;
+		box-sizing: border-box;
+
+		.vidBtn {
+			display:none;
+		}
+
+		p {
+			opacity: 0;
+		}
+
+		&.open {
+			border-radius: 10px;
+			padding:10px;
+			&:before, &:after {
+				display:none;
+			}
+			.vidBtn {
+				display: inline-block;
+				padding:5px 10px;
+				border-radius: 6px;
+				margin-top:10px;
+				transition: all 0.35s ease;
+				border:solid 1px #fff;
+				cursor: pointer;
+				&:hover {
+					background:#fff;
+					color:#00a19a;
+				}
+			}
+		}
 
 		&:before, &:after {
 		  display: inline-block;

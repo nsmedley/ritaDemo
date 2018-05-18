@@ -109,11 +109,11 @@ $(document).ready(function() {
     });
   });
 
-  $('.point').click(function() {
-    $('.point').removeClass('open');
-    $('.point').css('width', '20px');
-    $('.point').css('height', '20px');
-    $('.point p').fadeTo(0, 0);
+  $('#one').click(function() {
+    // $('.point').removeClass('open');
+    // $('.point').css('width', '20px');
+    // $('.point').css('height', '20px');
+    // $('.point p').fadeTo(0, 0);
     $(this).addClass('open');
 
     setTimeout(function(){
@@ -126,6 +126,11 @@ $(document).ready(function() {
       $('.point.open p').fadeTo(250, 1);
     }, 500);
 
+  });
+
+  $('#two').click(function() {
+    $('.embed-container').fadeIn(250);
+    $('.overlay').fadeIn(250);
   });
 
   $('.vidBtn').click(function() {

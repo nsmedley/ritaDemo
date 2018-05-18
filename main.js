@@ -2,8 +2,8 @@ $(document).ready(function() {
   var player = new Vimeo.Player('player');
 
   $('.point#one').click(function() {
-    $('.overlay h1').html('Video title 1');
-    player.loadVideo(237401551).then(function(id) {
+    $('.overlay h1').html('Company Information');
+    player.loadVideo(270620721).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -20,8 +20,8 @@ $(document).ready(function() {
   });
 
   $('.point#two').click(function() {
-    $('.overlay h1').html('Video title 2');
-    player.loadVideo(246099157).then(function(id) {
+    $('.overlay h1').html('Text Message');
+    player.loadVideo(270620731).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -38,8 +38,8 @@ $(document).ready(function() {
   });
 
   $('.point#three').click(function() {
-    $('.overlay h1').html('Video title 3');
-    player.loadVideo(250101793).then(function(id) {
+    $('.overlay h1').html('Timed Transfer');
+    player.loadVideo(270620760).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -56,8 +56,8 @@ $(document).ready(function() {
   });
 
   $('.point#four').click(function() {
-    $('.overlay h1').html('Video title 4');
-    player.loadVideo(250101673).then(function(id) {
+    $('.overlay h1').html('Ghost Writing');
+    player.loadVideo(270620818).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -74,8 +74,8 @@ $(document).ready(function() {
   });
 
   $('.point#five').click(function() {
-    $('.overlay h1').html('Video title 5');
-    player.loadVideo(244664985).then(function(id) {
+    $('.overlay h1').html('Shared Data');
+    player.loadVideo(270621098).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -92,8 +92,8 @@ $(document).ready(function() {
   });
 
   $('.point#six').click(function() {
-    $('.overlay h1').html('Video title 6');
-    player.loadVideo(244664877).then(function(id) {
+    $('.overlay h1').html('VIP & Urgent & ColdCall');
+    player.loadVideo(270621111).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {

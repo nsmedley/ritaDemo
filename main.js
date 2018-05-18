@@ -123,9 +123,19 @@ $(document).ready(function() {
       $('.point.open').css('height', 'auto');
     }, 500);
     setTimeout(function(){
+      $('.closeModal').show();
       $('.point.open p').fadeTo(250, 1);
     }, 500);
 
+  });
+
+  $('.closeModal').click(function(e) {
+    e.stopPropagation();
+    $('#one').removeClass('open');
+    $('#one').css('width', '20px');
+    $('#one').css('height', '20px');
+    $('#one p').fadeTo(0, 0);
+    $(this).hide();
   });
 
   $('#two').click(function() {

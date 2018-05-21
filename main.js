@@ -2,7 +2,6 @@ $(document).ready(function() {
   var player = new Vimeo.Player('player');
 
   $('.point#one').click(function() {
-    $('.overlay h1').html('Company Information');
     player.loadVideo(270620721).then(function(id) {
       player.play();
     }).catch(function(error) {
@@ -20,8 +19,7 @@ $(document).ready(function() {
   });
 
   $('.point#two').click(function() {
-    $('.overlay h1').html('Text Message');
-    player.loadVideo(270620731).then(function(id) {
+    player.loadVideo(270620836).then(function(id) {
       player.play();
     }).catch(function(error) {
         switch (error.name) {
@@ -38,61 +36,6 @@ $(document).ready(function() {
   });
 
   $('.point#three').click(function() {
-    $('.overlay h1').html('Timed Transfer');
-    player.loadVideo(270620760).then(function(id) {
-      player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
-    });
-  });
-
-  $('.point#four').click(function() {
-    $('.overlay h1').html('Ghost Writing');
-    player.loadVideo(270620818).then(function(id) {
-      player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
-    });
-  });
-
-  $('.point#five').click(function() {
-    $('.overlay h1').html('Shared Data');
-    player.loadVideo(270621098).then(function(id) {
-      player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
-    });
-  });
-
-  $('.point#six').click(function() {
-    $('.overlay h1').html('VIP & Urgent & ColdCall');
     player.loadVideo(270621111).then(function(id) {
       player.play();
     }).catch(function(error) {
@@ -109,36 +52,46 @@ $(document).ready(function() {
     });
   });
 
-  $('#one').click(function() {
-    // $('.point').removeClass('open');
-    // $('.point').css('width', '20px');
-    // $('.point').css('height', '20px');
-    // $('.point p').fadeTo(0, 0);
-    $(this).addClass('open');
+  $('.point#four').click(function() {
+    player.loadVideo(270620760).then(function(id) {
+      player.play();
+    }).catch(function(error) {
+        switch (error.name) {
+            case 'TypeError':
+                break;
+            case 'PasswordError':
+                break;
+            case 'PrivacyError':
+                break;
+            default:
+                break;
+        }
+    });
+  });
 
-    setTimeout(function(){
-      $('.point.open').css('width', '250px');
-    }, 250);
-    setTimeout(function(){
-      $('.point.open').css('height', 'auto');
-    }, 500);
-    setTimeout(function(){
-      $('.closeModal').show();
-      $('.point.open p').fadeTo(250, 1);
-    }, 500);
-
+  $('.point#five').click(function() {
+    player.loadVideo(270620731).then(function(id) {
+      player.play();
+    }).catch(function(error) {
+        switch (error.name) {
+            case 'TypeError':
+                break;
+            case 'PasswordError':
+                break;
+            case 'PrivacyError':
+                break;
+            default:
+                break;
+        }
+    });
   });
 
   $('.closeModal').click(function(e) {
     e.stopPropagation();
-    $('#one').removeClass('open');
-    $('#one').css('width', '20px');
-    $('#one').css('height', '20px');
-    $('#one p').fadeTo(0, 0);
     $(this).hide();
   });
 
-  $('#two').click(function() {
+  $('.point').click(function() {
     $('.embed-container').fadeIn(250);
     $('.overlay').fadeIn(250);
   });

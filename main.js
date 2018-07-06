@@ -1,88 +1,25 @@
 $(document).ready(function() {
-  var player = new Vimeo.Player('player');
+  var iframe = document.querySelector('#player');
+  var player = new Vimeo.Player(iframe);
 
   $('.point#one').click(function() {
-    player.loadVideo(270620721).then(function(id) {
+    player.unload();
+    player.loadVideo(274516353).then(function(id) {
       player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
     });
   });
 
   $('.point#two').click(function() {
-    player.loadVideo(270620836).then(function(id) {
+    player.unload();
+    player.loadVideo(274516334).then(function(id) {
       player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
     });
   });
 
   $('.point#three').click(function() {
-    player.loadVideo(270621111).then(function(id) {
-      player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
-    });
-  });
-
-  $('.point#four').click(function() {
+    player.unload();
     player.loadVideo(270620760).then(function(id) {
       player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
-    });
-  });
-
-  $('.point#five').click(function() {
-    player.loadVideo(270620731).then(function(id) {
-      player.play();
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'TypeError':
-                break;
-            case 'PasswordError':
-                break;
-            case 'PrivacyError':
-                break;
-            default:
-                break;
-        }
     });
   });
 
